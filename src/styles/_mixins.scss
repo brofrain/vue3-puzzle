@@ -1,0 +1,16 @@
+@mixin base__cover {
+  position: absolute;
+  inset: 0;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: inherit;
+}
+
+@mixin base__gradient-bg {
+  background: linear-gradient(300deg, #6e72fc 0%, #ad1deb 75%) center / cover
+    no-repeat fixed;
+}
+
+@mixin base__section-shadow {
+  box-shadow: 0 0 6px $base__color--shadow;
+}

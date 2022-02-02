@@ -63,7 +63,7 @@ const isImgLoaded = ref(false);
 })();
 
 const emit = defineEmits<{
-  (e: "swapUserPuzzle", payload: { indexA: number; indexB: number }): void;
+  (e: "swap-user-puzzle", payload: { indexA: number; indexB: number }): void;
 }>();
 
 const getPuzzleCol = (index: number) => index % props.hSize;
@@ -121,7 +121,7 @@ const handlePuzzleClick = (index: number) => {
     return;
   }
 
-  emit("swapUserPuzzle", { indexA: index, indexB: blankPuzzleIndex.value });
+  emit("swap-user-puzzle", { indexA: index, indexB: blankPuzzleIndex.value });
 };
 </script>
 

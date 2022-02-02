@@ -43,7 +43,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   (e: "update:size", payload: { h: number; v: number }): void;
-  (e: "shufflePuzzle"): void;
+  (e: "shuffle-puzzle"): void;
 }>();
 
 const tmpHSize = ref(props.hSize);
@@ -65,7 +65,7 @@ const updateSize = () => {
 };
 
 const shuffle = () => {
-  emit("shufflePuzzle");
+  emit("shuffle-puzzle");
 };
 </script>
 

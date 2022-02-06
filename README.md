@@ -5,7 +5,7 @@ The supported puzzle sizes range from 3x2 (or 2x3) up to 9x9.
 
 ## Demo
 
-Check out the online [demo](https://brofrain.github.io/vue3-puzzle/).
+👉 Check out the online [demo](https://brofrain.github.io/vue3-puzzle/).
 
 ## Project setup
 
